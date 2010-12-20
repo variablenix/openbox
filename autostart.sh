@@ -1,6 +1,7 @@
 # This shell script is run before Openbox launches.
 # Environment variables set here are passed to the Openbox session.
 
+
 # Set a background color
 BG=""
 if which hsetroot >/dev/null 2>&1; then
@@ -43,11 +44,12 @@ if which /usr/lib/openbox/xdg-autostart >/dev/null 2>&1; then
   /usr/lib/openbox/xdg-autostart $DESKTOP_ENV
 fi
 
-# Launch xcompmgr and tint2 with openbox
-if which tint2 >/dev/null 2>&1; then
-	(sleep 2 && xcompmgr) &
-	(sleep 2 && tint2) &
-fi
-
-
+# Programs that will run after Openbox has started
+(sleep 2 && nitrogen --restore) &
+(sleep 2 && tint2) &
+(sleep 2 && volwheel) &
+(sleep 2 && pacupdate) &
+(sleep 2 && ipager) &
+(sleep 2 && xcompmgr -F -c -t-5 -l-5 -r4.2 -o.55) &
+(sleep 2 && conky -d) &
 
