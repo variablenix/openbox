@@ -217,6 +217,9 @@
 			<item label="ntop"> <action name="Execute">
 				<execute>xterm -e ntop</execute>
 			</action> </item>
+			<item label="Pidgin"> <action name="Execute">
+					<execute>pidgin</execute>
+			</action> </item>
 			<item label="Talk"> <action name="Execute">
 				<execute>xterm -e talk</execute>
 			</action> </item>
