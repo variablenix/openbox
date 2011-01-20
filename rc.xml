@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Bear2</name>
+    <name>Mire_v2_orange</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -194,25 +194,25 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Left">
+    <keybind key="C-Left">
       <action name="SendToDesktopLeft">
         <dialog>no</dialog>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Right">
+    <keybind key="C-Right">
       <action name="SendToDesktopRight">
         <dialog>no</dialog>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Up">
+    <keybind key="C-Up">
       <action name="SendToDesktopUp">
         <dialog>no</dialog>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-A-Down">
+    <keybind key="C-Down">
       <action name="SendToDesktopDown">
         <dialog>no</dialog>
         <wrap>no</wrap>
@@ -278,33 +278,38 @@
       </action>
     </keybind>
     <keybind key="A-F1">
-	    <action name="Execute">
-		    <execute>terminal</execute>
-	    </action>
+      <action name="Execute">
+        <execute>terminal</execute>
+      </action>
     </keybind>
     <keybind key="A-F2">
-	    <action name="Execute">
-		    <execute>urxvt</execute>
-	    </action>
+      <action name="Execute">
+        <execute>urxvt</execute>
+      </action>
     </keybind>
     <keybind key="A-F3">
-	    <action name="Execute">
-		    <execute>pcmanfm</execute>
-	    </action>
-    </keybind> 
+      <action name="Execute">
+        <execute>pcmanfm</execute>
+      </action>
+    </keybind>
     <keybind key="A-F4">
-	    <action name="Execute">
-		    <execute>rox</execute>
-	    </action>
+      <action name="Execute">
+        <execute>rox</execute>
+      </action>
     </keybind>
     <keybind key="A-r">
-	    <action name="Execute">
-		    <execute>gmrun</execute>
-	    </action>
+      <action name="Execute">
+        <execute>gmrun</execute>
+      </action>
     </keybind>
     <keybind key="A-f">
+      <action name="Execute">
+        <execute>firefox</execute>
+      </action>
+    </keybind>
+    <keybind key="A-c">
 	    <action name="Execute">
-		    <execute>firefox</execute>
+		    <execute>chromium</execute>
 	    </action>
     </keybind>
   </keyboard>
@@ -747,18 +752,7 @@
 
   # end of the example
 -->
-<application name="URxvt">
-  <decor>no</decor>
-  <focus>yes</focus>
-  <position>
-    <x>center</x>
-    <y>20</y>
-  </position>
-  <layer>below</layer>
-  <desktop>all</desktop>
-  <maximized>true</maximized> #Only if you want a full size terminal.
+    <application name="URxvt"><decor>no</decor><focus>yes</focus><position><x>center</x><y>20</y></position><layer>below</layer><desktop>all</desktop><maximized>true</maximized> #Only if you want a full size terminal.
 </application>
-
-
- </applications>
+  </applications>
 </openbox_config>

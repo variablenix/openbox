@@ -169,9 +169,6 @@
 			<item label="Avahi VNC Server Browser"> <action name="Execute">
 				<execute>bvnc</execute>
 			</action> </item>
-			<item label="ELinks"> <action name="Execute">
-				<execute>xterm -e elinks</execute>
-			</action> </item>
 			<item label="Epiphany"> <action name="Execute">
 				<execute>epiphany</execute>
 			</action> </item>
@@ -187,8 +184,8 @@
 			<item label="FireFox"> <action name="Execute">
 				<execute>firefox</execute>
 			</action> </item>
-			<item label="Flock"> <action name="Execute">
-				<execute>flockbrowser</execute>
+			<item label="Chromium"> <action name="Execute">
+				<execute>chromium</execute>
 			</action> </item>
 			<item label="FTP"> <action name="Execute">
 				<execute>xterm -e ftp</execute>
@@ -204,6 +201,12 @@
 			</action> </item>
 			<item label="Jperf"> <action name="Execute">
 				<execute>jperf</execute>
+			</action> </item>
+			<item label="Lynx"> <action name="Execute">
+				<execute>xterm -e lynx</execute>
+			</action> </item>
+			<item label="ELinks"> <action name="Execute">
+				<execute>xterm -e elinks</execute>
 			</action> </item>
 			<item label="Links"> <action name="Execute">
 				<execute>xterm -e links</execute>
@@ -240,6 +243,9 @@
 			</action> </item>
 		</menu>
 		<menu id="3" label="Office">
+			<item label="LibreOffice"> <action name="Execute">
+				<execute>libreoffice</execute>
+			</action> </item>
 			<item label="Dictionary"> <action name="Execute">
 				<execute>xfce4-dict</execute>
 			</action> </item>
@@ -248,24 +254,6 @@
 			</action> </item>
 			<item label="KchmViewer"> <action name="Execute">
 				<execute>kchmviewer</execute>
-			</action> </item>
-			<item label="LibreOffice"> <action name="Execute">
-				<execute>ooffice</execute>
-			</action> </item>
-			<item label="LibreOffice Base"> <action name="Execute">
-				<execute>oobase</execute>
-			</action> </item>
-			<item label="LibreOffice Calc"> <action name="Execute">
-				<execute>oocalc</execute>
-			</action> </item>
-			<item label="LibreOffice Impress"> <action name="Execute">
-				<execute>ooimpress</execute>
-			</action> </item>
-			<item label="LibreOffice Writer"> <action name="Execute">
-				<execute>oowriter</execute>
-			</action> </item>
-			<item label="Openoffice.org Math"> <action name="Execute">
-				<execute>oomath</execute>
 			</action> </item>
 			<item label="Orage"> <action name="Execute">
 				<execute>orage</execute>
@@ -281,14 +269,8 @@
 			<item label="Sunbird"> <action name="Execute">
 				<execute>sunbird</execute>
 			</action> </item>
-			<item label="Terminal"> <action name="Execute">
-				<execute>exo-open --launch TerminalEmulator</execute>
-			</action> </item>
 			<item label="TrueCrypt"> <action name="Execute">
 				<execute>truecrypt</execute>
-			</action> </item>
-			<item label="Web Browser"> <action name="Execute">
-				<execute>exo-open --launch WebBrowser</execute>
 			</action> </item>
 			<item label="Wicd"> <action name="Execute">
 				<execute>wicd-client</execute>
@@ -440,9 +422,6 @@
 			<item label="Disk Utility"> <action name="Execute">
 				<execute>palimpsest</execute>
 			</action> </item>
-			<item label="GDM Setup"> <action name="Execute">
-				<execute>gksu gdmsetup</execute>
-			</action> </item>
 			<item label="GKrellM"> <action name="Execute">
 				<execute>gkrellm</execute>
 			</action> </item>
@@ -459,13 +438,7 @@
 				<execute>xterm -e netwatch</execute>
 			</action> </item>
 			<item label="pstree"> <action name="Execute">
-				<execute>xterm -e pstree.x11</execute>
-			</action> </item>
-			<item label="pstree"> <action name="Execute">
 				<execute>xterm -e pstree</execute>
-			</action> </item>
-			<item label="pstree"> <action name="Execute">
-				<execute>xterm -e /usr/bin/pstree.x11</execute>
 			</action> </item>
 			<item label="Sensor Viewer"> <action name="Execute">
 				<execute>xfce4-sensors</execute>
@@ -543,9 +516,6 @@
 			</action> </item>
 			<item label="Xclock (analog)"> <action name="Execute">
 				<execute>xclock -analog</execute>
-			</action> </item>
-			<item label="Xclock (digital)"> <action name="Execute">
-				<execute>xclock -digital -update 1</execute>
 			</action> </item>
 			<item label="Xclock (digital)"> <action name="Execute">
 				<execute>xclock -digital</execute>
