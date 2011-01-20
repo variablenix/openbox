@@ -8,18 +8,19 @@ xftfont Terminus:size=7
 update_interval 1.0 # Update interval in seconds
 
 own_window yes
-own_window_type normal
+own_window_type desktop
 own_window_transparent yes
 own_window_argb_value 200    # value range 0-255
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
 double_buffer yes
 
-draw_shades no
+draw_shades yes
 draw_outline no
 draw_borders no # Draw borders around text
 stippled_borders 8
 border_width 0
+maximum_width 1200
 
 out_to_console no
 
@@ -46,6 +47,7 @@ override_utf8_locale no # Force UTF8? note that UTF8 support required XFT
 use_spacer right # Add spaces to keep things from moving about, only affects certain objects.
 
 TEXT
-${color slate grey}${time %Z} :${color }${time %a,%e %B %G %H:%M:%S} ${color slate grey} UpTime: ${color }$uptime ${color slate grey} ${color blue}$loadavg  ${color}CPU:${color } $cpu% ${color aa0000}${cpubar 10,50} ${color }${cpugraph 10,130 000055 ff0000} ${acpitemp}C ${color 
-slate grey} ${color grey}ACPI: ${color white}$battery ${color #2299cc} ${if_running mpd} Now Playing: ${color blue}$mpd_smart ${color white}$mpd_status ${color blue}$mpd_elapsed/$mpd_length $endif
+${color slate grey}${time %Z} :${color }${time %a %e %B %G %H:%M} ${color slate grey} UpTime: ${color }$uptime ${color slate grey} ${color blue}$loadavg  ${color}CPU:${color } $cpu% ${color aa0000}${cpubar 10,50} ${color }${cpugraph 10,130 000055 ff0000} ${acpitemp}C ${color 
+slate grey} ${color grey}ACPI: ${color white}$battery ${color #2299cc} ${if_running mpd}Playing: ${color 
+blue}$mpd_smart ${color white}$mpd_elapsed/$mpd_length  $endif
 
